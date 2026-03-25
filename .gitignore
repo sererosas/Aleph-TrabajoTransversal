@@ -1,0 +1,12 @@
+# Archivos compilados
+*.exe
+*.out
+*.o
+*.obj
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
