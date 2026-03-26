@@ -99,11 +99,12 @@ El proyecto utiliza Flex y Bison para el análisis léxico y sintáctico.
 - GCC
 
 ### Compilar y ejecutar
+```
 flex tpt.l
 bison -d tpt.y
 gcc lex.yy.c tpt.tab.c TADdataType.c aleph.c -lfl
 .\a.exe
-
+```
 ## Estructura del Proyecto
 
 ```
