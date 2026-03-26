@@ -1,0 +1,58 @@
+*******Conjs. y listas*********
+'a' = {1,1,1,2,{3},{3}}
+'b' = {20, 2, {3}, [1,2]}
+resultado = 'a' ^ 'b'
+
+print( {1,2} + {1,4})
+print( [1,2] + [1,4])
+print(1+2)
+
+*******Asign. mult.***********
+let ('a','b','c') = ({1}, [1], {2}+{1})
+let ('a','b') = ([2], {1,2}, [100,500])
+let('x', 'y', 'z') = ({500})
+let ('estados', 'alfabeto', 'transiciones', 'inicial', 'aceptacion') = ({q0,q1,q2,q3},{a,b},{[q0,a,{q1,q2}],[q1,b,{q3}]},q0,{q3})
+
+******* IF *********
+if(1 in {3,2,1} && {400,12,20} < {400,12,20}){print(Verdadero)}else{print(falso)}
+
+*******WHILE*********
+mientras una lista tenga elems mostrar y sacar
+'i' = [1,2,3,{1,2}]
+while( (sizel 'i') > 0){print(pop 'i')}
+
+*******FOR EACH*********
+para cada elem. contar los num. menores a 10
+'cuenta' = 0
+for 'k' in {32,1,0,12,7,100} {if('k' < 10){'cuenta' = 'cuenta' + 1}}
+
+*******FUNC.*********
+
+function devolver un elem de un conjunto
+
+define fn_devolverConj( 'C' ,'pos'){
+	'j' = 1;
+	for 'var' in 'C' {
+	    if('j' == 'pos'){
+	      'devolver' = 'var';
+	    }
+	    'j' = 'j'+1;
+	}
+   return 'devolver';
+}
+
+'a' = fn_devolverConj({13,7}, 1) -->13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
