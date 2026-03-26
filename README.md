@@ -16,7 +16,7 @@ Aleph es un lenguaje de programación interpretado diseñado para la manipulaci�
 
 | Operador | Descripción |
 |----------|-------------|
-| `+` | Unión/Concatenación |
+| `+` | Unión |
 | `^` | Intersección |
 | `-` | Diferencia |
 | `cardinal` | Cardinalidad (número de elementos) |
@@ -29,6 +29,16 @@ Aleph es un lenguaje de programación interpretado diseñado para la manipulaci�
 | `push` | Agregar elemento |
 | `pop` | Eliminar último elemento |
 | `sizel` | Tamaño de la lista |
+
+## Operadores Sobrecargados
+
+Los siguientes operadores funcionan tanto para conjuntos como para listas:
+
+| Operador | Conjuntos | Listas o Valores numericos |
+|----------|-----------|--------|
+| `+` | Unión | Concatenación |
+| `<` | Inclusión (subconjunto) | comparacion entre numeros |
+| `>` | Inclusión (superconjunto) | comparacion entre numeros |
 
 ## Asignación de Variables
 
@@ -66,7 +76,7 @@ while (condición) {
 
 ### For-Each
 ```
-for 'elemento' in conjunto { 
+for 'elemento' in 'conjunto' { 
     // código 
 }
 ```
@@ -74,7 +84,7 @@ for 'elemento' in conjunto {
 ## Definición de Funciones
 
 ```
-define fn_nombre(parámetros) {
+define fn_nombre('parámetros') {
     // cuerpo de la función
     return expresión;
 }
